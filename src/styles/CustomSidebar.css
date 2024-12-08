@@ -1,0 +1,25 @@
+.sidebar-button {
+  @apply py-5 w-full rounded-md justify-start transition-colors;
+  @apply hover:bg-foreground hover:text-background;
+  @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2;
+  @apply disabled:pointer-events-none disabled:opacity-50;
+}
+
+.sidebar-button[data-state="open"] {
+  @apply bg-accent text-accent-foreground;
+}  
+
+.sidebar {
+  @apply fixed left-0 top-0 z-40 h-[calc(100vh-24px)] w-[250px] border bg-background;
+  margin: 12px;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+
+.sidebar > * {
+  border-radius: inherit;
+}
+
+.sidebar [role="navigation"] {
+  border-radius: inherit;
+}
