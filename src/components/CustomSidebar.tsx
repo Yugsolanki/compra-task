@@ -19,7 +19,7 @@ export function CustomSidebar() {
         <Sidebar className="sidebar m-3 rounded-3xl bg-background">
           <SidebarHeader className="justify-start m-0 px-0 pt-5">
             <a href="#">
-              <img src="./../../public/logo-name.svg" alt="" />
+              <img src="/logo-name.svg" alt="" />
             </a>
           </SidebarHeader>
           <SidebarContent>
